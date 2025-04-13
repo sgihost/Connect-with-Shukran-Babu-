@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect with Shukran Babu</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f4f4f4;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #333;
+      margin-bottom: 15px;
+    }
+
+    .username {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      width: 100%;
+    }
+
+    .social-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-nav li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-nav a {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 18px 22px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      width: 250px;
+      height: 50px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    i {
+      position: absolute;
+      left: 10%;
+    }
+
+    .social-nav a i {
+      font-size: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+      aspect-ratio: 32 / 5;
+      object-fit: contain;
+    }
+
+    .social-nav a:hover {
+      background-color: #333;
+      color: #fff;
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-nav a:hover i {
+      color: #fff;
+      transform: scale(1.2);
+    }
+
+    @media (min-width: 481px) {
+      .social-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .social-nav {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (width: 540px) {
+      .social-nav {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (max-width: 300px) {
+      .social-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-nav a {
+        width: 80vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <img src="profile.jpg" alt="User Profile Picture" class="profile-pic" />
+      <h2 class="username">Shukran Babu</h2>
+    </div>
+
+    <nav>
+      <ul class="social-nav">
+        <li>
+          <a href="fb://facewebmodal/f?href=https://www.facebook.com/share/1GANUd9tB7/">
+  <i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+        </li>
+        <li>
+          <a href="fb://facewebmodal/f?href=https://www.facebook.com/share/16PAvQRDLp/">
+  <i class="fab fa-facebook-square"></i><span>FB Page</span>
+</a>
+        </li>
+        <li>
+          <a href="https://youtube.com/@shukranbabu?si=h4jDFJF1oXMzYYhT">
+  <i class="fab fa-youtube"></i><span>YouTube</span>
+</a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@shukranbabu">
+            <i class="fab fa-tiktok"></i><span>TikTok</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:mdshukranbabu272@gmail.com">
+            <i class="fas fa-envelope"></i><span>Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+8801747903580">
+            <i class="fas fa-phone-alt"></i><span>Call</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
